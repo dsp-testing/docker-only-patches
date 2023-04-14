@@ -7,7 +7,6 @@ job:
     branch:
     api-endpoint: https://api.github.com/
     hostname: github.com
-    commit: 9eb7310acf9faa418a53396eac5a7bcbdd065462
   dependencies:
   existing-pull-requests: []
   updating-a-pull-request: false
