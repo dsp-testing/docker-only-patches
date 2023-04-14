@@ -4,14 +4,6 @@ job:
     provider: github
     repo: dsp-testing/docker-only-patches
     directory: "/."
-    branch:
-    api-endpoint: https://api.github.com/
-    hostname: github.com
-  dependencies:
-  existing-pull-requests: []
-  updating-a-pull-request: false
-  lockfile-only: false
-  update-subdependencies: false
   ignore-conditions:
   - dependency-name: golang
     version-requirement:
@@ -19,20 +11,6 @@ job:
     - version-update:semver-major
     - version-update:semver-minor
     source: ".github/dependabot.yml"
-  requirements-update-strategy:
   allowed-updates:
   - dependency-type: direct
     update-type: all
-  credentials-metadata:
-  - type: git_source
-    host: github.com
-  security-advisories: []
-  max-updater-run-time: 2700
-  vendor-dependencies: false
-  experiments: {}
-  reject-external-code: false
-  commit-message-options:
-    prefix:
-    prefix-development:
-    include-scope:
-  security-updates-only: false
